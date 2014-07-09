@@ -5,6 +5,7 @@ Resizing Terminal according to window size
 
 Installation :
 
+    wget https://raw.githubusercontent.com/daff/termresize/master/termresize
     cp termresize /usr/local/bin/
     chmod +x /usr/local/bin/termresize
 
