@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# move cursor far away from view
+tput cup 999 999
+
+# find where the cursor really is
+exec < /dev/tty
+OLDSTTY=$(stty -g)
+stty raw -echo min 0
+echo -en "\033[6n" > /dev/tty
+IFS=';' read -r -d R -a POS
+
+# restore stty status
+stty $OLDSTTY
+
+ROW=$((${POS[0]:2}))
+COL=$((${POS[1]}))
+
+# resize terminal at the good size
+stty rows $ROW columns $COL
+
+echo "
+Terminal resized to : $ROW rows, $COL cols"
+
+exit 0
