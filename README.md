@@ -1,7 +1,7 @@
 termresize
 ==========
 
-When working on an embedded Linux box via serial port, it assumes that your Terminal window is 24 lines and 80 columns.
+When working on a Linux box via serial port, it assumes that your Terminal window is 24 lines and 80 columns.
 This script determines the real size of the window and updates 'stty' accordingly.
 
 Installation :
