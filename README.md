@@ -3,7 +3,7 @@ termresize
 
 When working on a Linux box via serial port, it assumes that your Terminal window is 24 lines and 80 columns.
 This script determines the real size of the window and updates 'stty' accordingly.
-Useful when working on Raspberry Pi, Beagleboard or any small ARM development boards.
+Useful when working on Raspberry Pi, Beaglebone or any small ARM development boards.
 
 Runs on Debian Wheezy. Not tested in other distributions.
 
