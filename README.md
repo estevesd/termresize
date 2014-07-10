@@ -4,6 +4,8 @@ termresize
 When working on a Linux box via serial port, it assumes that your Terminal window is 24 lines and 80 columns.
 This script determines the real size of the window and updates 'stty' accordingly.
 
+Runs on Debian Wheezy. Not tested in other distributions.
+
 Installation :
 
     wget https://raw.githubusercontent.com/daff/termresize/master/termresize
