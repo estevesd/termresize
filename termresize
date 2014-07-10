@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# exit if terminal is not accessed via serial, therefore don't need to be resized
+if [ ! "$TERM" = "vt100" ]; then
+	exit 0
+fi
+
 # move cursor far away from view
 tput cup 999 999
 
