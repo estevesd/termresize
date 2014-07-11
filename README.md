@@ -9,7 +9,7 @@ Runs on Debian Wheezy. Not tested in other distributions.
 
 Installation :
 
-    wget https://raw.githubusercontent.com/estevesd/termresize/master/termresize
+    wget https://github.com/estevesd/termresize/raw/master/termresize
     mv termresize /usr/local/bin/termresize
     chmod +x /usr/local/bin/termresize
 
